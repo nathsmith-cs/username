@@ -5,7 +5,7 @@
 #!/bin/bash
 
 
-notReaady=true
+notReady=true
 
 while [[ $notReady != false ]];do
     echo "The only characters that can be used are lower case letters,
