@@ -1,13 +1,13 @@
 # README for Username Validation Script
 
 ## Author Information
-- **Name:** [Your Full Name]
-- **Course:** [Course Number and Name]
+- **Name:** Nathaniel William Smith
+- **Course:** CPSC-298: Intro to Nix
 - **Assignment:** Username Validation
-- **Date:** [Date of Completion]
+- **Date:** October 13, 2025
 
 ## Program Description
-[Write 2-3 sentences in your own words describing what this script does and its purpose. Explain the problem it solves and how it works at a high level.]
+The program takes input from the user and checks it on a serieses of checks to make sure its a valid username. It works at a high level because it checks multiple conditions on one input into the if statement.
 
 ## Username Requirements
 This script validates usernames according to the following rules:
@@ -27,11 +27,7 @@ To test with the provided input file:
 ```
 
 ## How the Script Works
-[Explain in 3-5 sentences how your script validates usernames. Include information about:]
-- The use of the `while` loop
-- The `grep` command with extended regular expressions
-- The meaning of the `-E` and `-v` flags
-- The redirect `> /dev/null 2>&1`
+The scripts doesn't use the grep command it uses equals logic to test if the input gotten from the while loop fits the specifications of a valid username
 
 ## Regular Expression Pattern
 The validation uses the following regular expression pattern:
@@ -44,16 +40,14 @@ This pattern ensures that:
 - The total length is between 3 and 12 characters
 
 ## Testing Results
-[Describe your testing process and results. Include:]
-- Example valid usernames you tested (at least two)
-- Example invalid usernames and why they fail (at least two)
-- How you used the username-input file to test
+- Two valid usernames that I used to test the program were jsmith and smith12. Both of these returned true because they used letters from a to z and number 0-9 and they started with lowercase letters. 
+- Two not-valid usernames that I used to test the program was j2$ and jsmith123459632. One of the username has the correct length but not correct symbol and the other doesn't have the correct length. Both returned invalid
+- To use the text file I just used ./username.sh<username-input
+and it ran all of the text cases to make sure the validation worked and then after running the test cases I add the notReady=true to stop the loop after giving a valid test case.
 
-## Challenges and Solutions
-[Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding regular expressions, or Git workflow problems.]
 
 ## Resources
-[List any resources you used (class slides, ChatGPT, etc.). Please refer to the course syllabus for more details on citations.]
+- I used Chatgpt to help me trouble shoot the certain syntaxes for if statements. I mainly used the given work in the assignment to complete it.
 
 ## License
 This project is part of coursework for Chapman University and is intended for educational purposes.
